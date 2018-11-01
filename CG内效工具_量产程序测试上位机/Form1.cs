@@ -172,7 +172,7 @@ namespace CG内效工具_量产程序测试上位机
                 Send_Data_list.Add(tmp_byte);
             }
 
-            if (command_byte_array.Length > 0)
+            if (command_byte_array != null && command_byte_array.Length > 0)
             {
                 // 添加命令部分的长度
                 Send_Data_list.Add((byte)command_byte_array.Length);
@@ -187,7 +187,7 @@ namespace CG内效工具_量产程序测试上位机
                 }
             }
 
-            if(command_byte_array.Length>0)
+            if(command_byte_array != null && command_byte_array.Length>0)
             {
                 // 添加命令部分
                 foreach (byte tmp_byte in command_byte_array)
@@ -196,7 +196,7 @@ namespace CG内效工具_量产程序测试上位机
                 }
             }
 
-            if (data_byte_array.Length > 0)
+            if (data_byte_array!=null && data_byte_array.Length > 0)
             {
                 // 添加数据部分
                 foreach (byte tmp_byte in data_byte_array)
