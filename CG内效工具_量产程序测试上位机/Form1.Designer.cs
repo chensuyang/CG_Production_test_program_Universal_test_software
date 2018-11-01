@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.打开串口_button = new System.Windows.Forms.Button();
             this.串口号_comboBox = new System.Windows.Forms.ComboBox();
             this.刷新串口_button = new System.Windows.Forms.Button();
@@ -283,6 +284,8 @@
             this.Controls.Add(this.刷新串口_button);
             this.Controls.Add(this.串口号_comboBox);
             this.Controls.Add(this.打开串口_button);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "量产测试程序上位机";
             this.Load += new System.EventHandler(this.Form1_Load);
