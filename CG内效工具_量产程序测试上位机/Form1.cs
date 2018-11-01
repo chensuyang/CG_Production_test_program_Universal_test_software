@@ -279,5 +279,10 @@ namespace CG内效工具_量产程序测试上位机
 
 
         }
+
+        private void 清空接收内容_button_Click(object sender, EventArgs e)
+        {
+            接收数据_textBox.Text = "";
+        }
     }
 }

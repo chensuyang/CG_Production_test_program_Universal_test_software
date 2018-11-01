@@ -47,6 +47,7 @@
             this.HEX显示_checkBox = new System.Windows.Forms.CheckBox();
             this.波特率_comboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.清空接收内容_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // 打开串口_button
@@ -210,7 +211,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(8, 218);
+            this.label5.Location = new System.Drawing.Point(8, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 20);
             this.label5.TabIndex = 15;
@@ -220,7 +221,7 @@
             // 
             this.HEX显示_checkBox.AutoSize = true;
             this.HEX显示_checkBox.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HEX显示_checkBox.Location = new System.Drawing.Point(758, 214);
+            this.HEX显示_checkBox.Location = new System.Drawing.Point(758, 208);
             this.HEX显示_checkBox.Name = "HEX显示_checkBox";
             this.HEX显示_checkBox.Size = new System.Drawing.Size(98, 24);
             this.HEX显示_checkBox.TabIndex = 16;
@@ -246,11 +247,23 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "波特率:";
             // 
+            // 清空接收内容_button
+            // 
+            this.清空接收内容_button.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.清空接收内容_button.Location = new System.Drawing.Point(588, 201);
+            this.清空接收内容_button.Name = "清空接收内容_button";
+            this.清空接收内容_button.Size = new System.Drawing.Size(164, 37);
+            this.清空接收内容_button.TabIndex = 19;
+            this.清空接收内容_button.Text = "清空已接收内容";
+            this.清空接收内容_button.UseVisualStyleBackColor = true;
+            this.清空接收内容_button.Click += new System.EventHandler(this.清空接收内容_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 435);
+            this.Controls.Add(this.清空接收内容_button);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.波特率_comboBox);
             this.Controls.Add(this.HEX显示_checkBox);
@@ -299,6 +312,7 @@
         private System.Windows.Forms.CheckBox HEX显示_checkBox;
         private System.Windows.Forms.ComboBox 波特率_comboBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button 清空接收内容_button;
     }
 }
 
